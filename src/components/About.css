@@ -1,0 +1,42 @@
+/* Mobile : texte puis informations, en colonne */
+.about__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.about__text p {
+  margin: 0 0 1rem;
+  line-height: 1.7;
+  max-width: 40rem;
+}
+
+.about__facts {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  align-content: start;
+}
+
+.about__fact {
+  padding: 1rem 1.25rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.about__fact dt { font-size: 0.85rem; color: var(--muted); }
+.about__fact dd { margin: 0.15rem 0 0; font-weight: 600; }
+
+/* Tablette : les 4 infos en grille 2x2 sous le texte */
+@media (min-width: 560px) {
+  .about__facts { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Ordinateur : texte à gauche, informations à droite */
+@media (min-width: 900px) {
+  .about__layout {
+    grid-template-columns: 1.4fr 1fr;
+    gap: 4rem;
+  }
+  .about__facts { grid-template-columns: 1fr; }
+}
