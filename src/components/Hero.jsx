@@ -1,6 +1,6 @@
 import "./Hero.css";
 import profil from "../images/profil.png";
-import cv from "../cv/cv.pdf";
+
 
 export default function Hero() {
   return (
@@ -27,7 +27,7 @@ export default function Hero() {
             <a href="#projects" className="btn btn--primary">
               Voir mes projets
             </a>
-            <a href={cv} className="btn btn--outline">
+            <a href="cv.pdf" download="CV_Nante.pdf" className="btn btn--outline">
               Télécharger mon cv
             </a>
             <a href="#contac" className="btn btn--outline">

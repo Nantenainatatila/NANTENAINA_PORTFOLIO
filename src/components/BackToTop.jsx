@@ -4,6 +4,7 @@ import "./BackToTop.css";
 export default function BackToTop() {
   const [visible, setVisible] = useState(false);
 
+  
   // Affiche le bouton seulement après 400px de défilement
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 400);
