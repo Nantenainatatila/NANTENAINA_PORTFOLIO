@@ -14,8 +14,14 @@ export default function Projects() {
           {projects.map((p) => (
             <article key={p.title} className="project">
               <h3 className="project__title">{p.title}</h3>
+              
+               <img
+                        className="project__photo"
+                        src="project1.png"
+                        alt=""
+                        
+                />
               <p className="project__desc">{p.description}</p>
-
               <ul className="project__tech">
                 {p.tech.map((t) => (
                   <li key={t} className="tag">{t}</li>

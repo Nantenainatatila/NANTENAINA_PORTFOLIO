@@ -14,9 +14,7 @@ export default function About() {
         <div className="about__text">
           <h2 className="section__title">À propos</h2>
           <p>
-            J'ai découvert la programmation en créant mon premier site web, et
-            je n'ai plus arrêté depuis. Aujourd'hui, je conçois des interfaces
-            avec React, en portant une attention particulière à la clarté et à
+            Acctuellent , en portant une attention particulière à la clarté et à
             l'accessibilité.
           </p>
           <p>

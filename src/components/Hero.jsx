@@ -30,7 +30,7 @@ export default function Hero() {
             <a href="cv.pdf" download="CV_Nante.pdf" className="btn btn--outline">
               Télécharger mon cv
             </a>
-            <a href="#contac" className="btn btn--outline">
+            <a href="#contact" className="btn btn--outline">
               Me contacter
             </a>
           </div>

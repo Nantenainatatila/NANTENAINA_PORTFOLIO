@@ -26,7 +26,14 @@
   padding: 0;
   list-style: none;
 }
-
+.project__photo {
+  width: 1000px;
+  height: 500px;
+  aspect-ratio: 16 / 9;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  border: 3px solid var(--button);
+}
 /* Les liens restent en bas de la carte, même si les textes ont des longueurs différentes */
 .project__links {
   display: flex;
