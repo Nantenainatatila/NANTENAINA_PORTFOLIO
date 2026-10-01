@@ -1,7 +1,13 @@
 import "./Projects.css";
 import { projects } from "../data/projects";
+import { useState } from "react";
 
 export default function Projects() {
+  const [afficher, setAfficher] = useState(false);
+  const Afficher = () => {
+    setAfficher(!afficher);
+  };
+
   return (
     <section id="projects" className="section">
       <div className="container">
@@ -21,7 +27,7 @@ export default function Projects() {
                         alt=""
                         
                 />
-              <p className="project__desc">{p.description}</p>
+              
               <ul className="project__tech">
                 {p.tech.map((t) => (
                   <li key={t} className="tag">{t}</li>
@@ -39,7 +45,14 @@ export default function Projects() {
                     Code source
                   </a>
                 )}
+                {p.title && (
+                  <button onClick ={Afficher} target="_blank" rel="noreferrer" className="btn btn--outline">
+                    {afficher? "Masquer la description" : "Voir la description"}
+                  </button>
+                )}
+                
               </div>
+              {afficher? <p className="project__desc">{p.description} </p>: ""}
             </article>
           ))}
         </div>
