@@ -28,7 +28,7 @@
 }
 .project__photo {
   width: 100%;
-  height: auto;
+  height: 200px;
   aspect-ratio: 16 / 9;
   aspect-ratio: 1;
   border-radius: 10px;
