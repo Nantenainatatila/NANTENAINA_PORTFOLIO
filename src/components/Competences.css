@@ -11,6 +11,9 @@
   border: 1px solid var(--border);
   border-radius: 12px;
 }
+.skills__card:hover {
+  border-color: var(--accent);
+}
 .skills__card h3 { margin: 0 0 1rem; font-size: 1.1rem; }
 
 .skills__card ul {

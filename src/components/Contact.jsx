@@ -17,8 +17,8 @@ export default function Contact() {
             </li>
             <li>
               <span>GitHub</span>
-              <a href="https://github.com/votre-nom" target="_blank" rel="noreferrer">
-                github.com/votre-nom
+              <a href="https://github.com/dashboard">
+              https://github.com/dashboard
               </a>
             </li>
             <li>

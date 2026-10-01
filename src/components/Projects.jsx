@@ -7,7 +7,7 @@ export default function Projects() {
       <div className="container">
         <h2 className="section__title">Projets</h2>
         <p className="section__subtitle">
-          Une sélection de ce que j'ai réalisé.
+          Ce que j'ai réalisé.
         </p>
 
         <div className="projects__grid">
@@ -23,13 +23,13 @@ export default function Projects() {
               </ul>
 
               <div className="project__links">
-                {p.demo && (
-                  <a href={p.demo} target="_blank" rel="noreferrer">
+                {p.link && (
+                  <a href={p.link} target="_blank" rel="noreferrer">
                     Voir le site
                   </a>
                 )}
-                {p.code && (
-                  <a href={p.code} target="_blank" rel="noreferrer">
+                {p.link && (
+                  <a href={p.link} target="_blank" rel="noreferrer">
                     Code source
                   </a>
                 )}

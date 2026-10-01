@@ -1,9 +1,10 @@
 import "./Competences.css";
 
 const groups = [
-  { title: "Front-end", items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"] },
-  { title: "Back-end", items: ["Node.js", "Express", "MongoDB", "API REST"] },
-  { title: "Outils", items: ["Git", "GitHub", "Vite", "Vercel", "Figma"] },
+  { title: "Front-end", items: ["HTML", "CSS", "JavaScript", "React"] },
+  { title: "Back-end", items: ["Node.js", "Express", "API REST"] },
+  { title: "Outils", items: ["Git", "GitHub", "Vite", "Vercel","Docker"]},
+  {title: "Database", items: ["PostgreSQL","MySQL","MongoDB"]}
 ];
 
 export default function Competences() {

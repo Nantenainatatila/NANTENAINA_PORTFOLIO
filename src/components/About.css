@@ -24,6 +24,10 @@
   border: 1px solid var(--border);
   border-radius: 12px;
 }
+
+.about__fact:hover {
+  border-color: var(--accent);
+}
 .about__fact dt { font-size: 0.85rem; color: var(--muted); }
 .about__fact dd { margin: 0.15rem 0 0; font-weight: 600; }
 

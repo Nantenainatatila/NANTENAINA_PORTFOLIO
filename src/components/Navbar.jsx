@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Navbar.css";
 
 const links = [
+  {href: "#top", label: "Accueil"},
   { href: "#about", label: "À propos" },
   {href: "#competences", label: "Competences"},
   { href: "#projects", label: "Projets" },
