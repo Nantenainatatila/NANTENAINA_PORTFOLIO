@@ -42,7 +42,7 @@ export default function Contact() {
           <ul className="contact__info">
             <li>
               <span>Email</span>
-              <a href="mailto:devnanantenaina@gmail.com">devnantenaina@gmail.com</a>
+              <a href="mailto:devnantenaina@gmail.com">devnantenaina@gmail.com</a>
             </li>
             <li>
               <span>GitHub</span>
