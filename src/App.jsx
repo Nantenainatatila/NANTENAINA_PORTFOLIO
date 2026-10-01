@@ -5,6 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Hero from "./components/Hero";
 import Competences from "./components/Competences";
+import BackToTop from "./components/BackToTop";
 import "./index.css";
 
 export default function App () {
@@ -36,6 +37,7 @@ export default function App () {
       <footer>
         <p>© {new Date().getFullYear()} Nantenaina</p>
       </footer>
+      <BackToTop />
     </>
   );
 }
