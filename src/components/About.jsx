@@ -1,4 +1,5 @@
 import "./About.css";
+import Reveal from "./Reveal";
 
 const facts = [
   { label: "Formation", value: "Licence en informatique" },
@@ -29,10 +30,13 @@ export default function About() {
 
         <dl className="about__facts">
           {facts.map((f) => (
-            <div key={f.label} className="about__fact">
+            <Reveal key={f.label}>
+              <div key={f.label} className="about__fact">
               <dt>{f.label}</dt>
               <dd>{f.value}</dd>
             </div>
+            </Reveal>
+            
           ))}
         </dl>
       </div>

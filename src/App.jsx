@@ -5,6 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Hero from "./components/Hero";
 import Competences from "./components/Competences";
+import Reveal from "./components/Reveal";
 import BackToTop from "./components/BackToTop";
 import "./index.css";
 
@@ -29,10 +30,20 @@ export default function App () {
       <Navbar theme={theme} onToggleTheme={toogleTheme} />
       <main>
         <Hero />
-        <About />
-        <Competences />
-        <Projects />
-        <Contact />
+        
+        <Reveal>
+          <About />
+        </Reveal>
+        <Reveal>
+          <Competences />
+        </Reveal>
+        <Reveal>
+          <Projects />
+        </Reveal>
+        <Reveal>
+          <Contact />
+        </Reveal>
+        
       </main>
       <footer>
         <p>© {new Date().getFullYear()} Nantenaina</p>

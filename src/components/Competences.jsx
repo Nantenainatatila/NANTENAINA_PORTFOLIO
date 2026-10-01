@@ -1,4 +1,5 @@
 import "./Competences.css";
+import Reveal from "./Reveal";
 
 const groups = [
   { title: "Front-end", items: ["HTML", "CSS", "JavaScript", "React"] },
@@ -18,7 +19,8 @@ export default function Competences() {
 
         <div className="skills__grid">
           {groups.map((g) => (
-            <div key={g.title} className="skills__card">
+            <Reveal key={g.title}>
+              <div key={g.title} className="skills__card">
               <h3>{g.title}</h3>
               <ul>
                 {g.items.map((item) => (
@@ -26,6 +28,8 @@ export default function Competences() {
                 ))}
               </ul>
             </div>
+            </Reveal>
+            
           ))}
         </div>
       </div>
