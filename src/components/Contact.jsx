@@ -42,18 +42,18 @@ export default function Contact() {
           <ul className="contact__info">
             <li>
               <span>Email</span>
-              <a href="mailto:votre@email.com">votre@email.com</a>
+              <a href="mailto:devnanantenaina@email.com">devnantenaina@gmail.com</a>
             </li>
             <li>
               <span>GitHub</span>
-              <a href="https://github.com/votre-nom" target="_blank" rel="noreferrer">
-                github.com/votre-nom
+              <a href="https://github.com/Nantenainatatila" target="_blank" rel="noreferrer">
+              https://github.com/Nantenainatatila
               </a>
             </li>
             <li>
               <span>LinkedIn</span>
-              <a href="https://linkedin.com/in/votre-nom" target="_blank" rel="noreferrer">
-                linkedin.com/in/votre-nom
+              <a href="https://linkedin.com/in/NANTENAINA Nante" target="_blank" rel="noreferrer">
+                NANTENAINA Nante
               </a>
             </li>
           </ul>
