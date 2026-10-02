@@ -1,5 +1,6 @@
 import "./Competences.css";
 import Reveal from "./Reveal";
+import TechTag from "./TechTag";
 
 const groups = [
   { title: "Front-end", items: ["HTML", "CSS", "JavaScript", "React"] },
@@ -24,7 +25,9 @@ export default function Competences() {
               <h3>{g.title}</h3>
               <ul>
                 {g.items.map((item) => (
-                  <li key={item} className="tag">{item}</li>
+                  <li key={item}>
+                    <TechTag name={item} />
+                  </li>
                 ))}
               </ul>
             </div>

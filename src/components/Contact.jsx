@@ -1,7 +1,18 @@
 import { useState } from "react";
 import "./Contact.css";
+import TechTag from "./TechTag";
 const FORMSPREE_ID = "mkjgedwj";
+import { MdEmail, MdLocationOn } from "react-icons/md";
+import { FaWhatsapp, FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
 
+
+const contacts = [
+  { icon: MdEmail,      text: "tatilanantenaina@gmail.com", href: "mailto:tatilanantenaina@gmail.com" },
+  { icon: FaWhatsapp,   text: "+261 34 83 154 40",          href: "https://wa.me/261348315440" },
+  { icon: FaGithub,   text: "github.com/nantenainatatila", href: "https://github.com/nantenainatatila" },
+  { icon: FaLinkedin,  text: "linkedin.com/in/devnantenaina",  href: "https://linkedin.com/in/devnantenaina" },
+  { icon: MdLocationOn,  text: "Akamasoa, Antananarivo, Madagascar" },
+];
 // Remplacez par l'identifiant de votre formulaire Formspree (ex. "xyzabcde")
 export default function Contact() {
   // "idle" | "sending" | "success" | "error"
@@ -35,28 +46,29 @@ export default function Contact() {
       <div className="container">
         <h2 className="section__title">Contact</h2>
         <p className="section__subtitle">
-          Un projet question ? Écrivez-moi, je réponds rapidement.
+          Un projet? question ? Écrivez-moi, je réponds rapidement.
         </p>
 
         <div className="contact__layout">
-          <ul className="contact__info">
-            <li>
-              <span>Email</span>
-              <a href="mailto:devnantenaina@gmail.com">devnantenaina@gmail.com</a>
-            </li>
-            <li>
-              <span>GitHub</span>
-              <a href="https://github.com/Nantenainatatila" target="_blank" rel="noreferrer">
-              https://github.com/Nantenainatatila
-              </a>
-            </li>
-            <li>
-              <span>LinkedIn</span>
-              <a href="https://linkedin.com/in/NANTENAINA Nante" target="_blank" rel="noreferrer">
-                NANTENAINA Nante
-              </a>
-            </li>
+        <ul className="contact__info">
+            {contacts.map(({ icon: Icon, text, href }) => (
+              <li key={text} className="contact_Icon_Text">
+                <span className="contact__icon" aria-hidden="true">
+                  <Icon />
+                </span>
+                <div className="contact__text">
+                  {href ? (
+                    <a href={href} target="_blank" rel="noreferrer">
+                      {text}
+                    </a>
+                  ) : (
+                    <p>{text}</p>
+                  )}
+                </div>
+              </li>
+            ))}
           </ul>
+
 
           <form className="contact__form" onSubmit={handleSubmit}>
             <label htmlFor="name">Nom</label>

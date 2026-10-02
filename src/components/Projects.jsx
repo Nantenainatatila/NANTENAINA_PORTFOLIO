@@ -1,6 +1,7 @@
 import "./Projects.css";
 import { projects } from "../data/projects";
 import { useState } from "react";
+import TechTag from "../components/TechTag";
 
 export default function Projects() {
   const [afficher, setAfficher] = useState(false);
@@ -27,10 +28,12 @@ export default function Projects() {
                         alt=""
                         
                 />
-              
+              <br />
               <ul className="project__tech">
                 {p.tech.map((t) => (
-                  <li key={t} className="tag">{t}</li>
+                  <li key={t}>
+                    <TechTag name={t} />
+                  </li>
                 ))}
               </ul>
 
@@ -47,7 +50,7 @@ export default function Projects() {
                 )}
                 {p.title && (
                   <button onClick ={Afficher} target="_blank" rel="noreferrer" className="btn btn--outline">
-                    {afficher? "Masquer la description" : "Voir la description"}
+                    {afficher? "Voir moins" : "Voir plus"}
                   </button>
                 )}
                 

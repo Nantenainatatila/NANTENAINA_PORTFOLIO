@@ -1,0 +1,10 @@
+.tech {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.tech__icon {
+  flex-shrink: 0;
+  width: 2.1em;
+  height: 1.8em;
+}
