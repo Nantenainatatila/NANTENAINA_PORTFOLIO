@@ -10,6 +10,7 @@
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 12px;
+  height: 100%;
 }
 .skills__card:hover {
   border-color: var(--accent);
