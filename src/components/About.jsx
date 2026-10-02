@@ -15,7 +15,7 @@ export default function About() {
         <div className="about__text">
           <h2 className="section__title">À propos</h2>
           <p>
-            Acctuellent , en portant une attention particulière à la clarté et à
+            Actuellement , en portant une attention particulière à la clarté et à
             l'accessibilité.
           </p>
           <p>
