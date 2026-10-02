@@ -1,6 +1,4 @@
 import "./Hero.css";
-import profil from "../images/profil.png";
-
 
 export default function Hero() {
   return (
@@ -8,7 +6,7 @@ export default function Hero() {
       <div className="hero__inner container">
         <img
           className="hero__photo"
-          src={profil}
+          src="profil.png"
           alt=""
           width="320"
           height="320"

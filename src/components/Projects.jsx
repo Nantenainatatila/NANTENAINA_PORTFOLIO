@@ -4,9 +4,13 @@ import { useState } from "react";
 import TechTag from "../components/TechTag";
 
 export default function Projects() {
-  const [afficher, setAfficher] = useState(false);
-  const Afficher = () => {
-    setAfficher(!afficher);
+  const [affiche, setAffiche] = useState([]);
+  const basculer = (title) => {
+    setAffiche((liste) => 
+      liste.includes(title)
+        ? liste.filter((t) => t !== title)
+        : [...liste, title]
+    );
   };
 
   return (
@@ -18,13 +22,15 @@ export default function Projects() {
         </p>
 
         <div className="projects__grid">
-          {projects.map((p) => (
-            <article key={p.title} className="project">
+          {projects.map((p) => {
+            const estAffiche = affiche.includes(p.title);
+            return (
+              <article key={p.title} className="project">
               <h3 className="project__title">{p.title}</h3>
               
                <img
                         className="project__photo"
-                        src="project1.png"
+                        src={p.image}
                         alt=""
                         
                 />
@@ -36,7 +42,7 @@ export default function Projects() {
                   </li>
                 ))}
               </ul>
-
+              
               <div className="project__links">
                 {p.link && (
                   <a href={p.link} target="_blank" rel="noreferrer">
@@ -48,16 +54,16 @@ export default function Projects() {
                     Code source
                   </a>
                 )}
-                {p.title && (
-                  <button onClick ={Afficher} target="_blank" rel="noreferrer" className="btn btn--outline">
-                    {afficher? "Voir moins" : "Voir plus"}
-                  </button>
-                )}
                 
+                  <button onClick ={() => basculer(p.title)} target="_blank" rel="noreferrer" className="btn btn--outline">
+                    {estAffiche? "Voir moins" : "Voir plus"}
+                  </button>
               </div>
-              {afficher? <p className="project__desc">{p.description} </p>: ""}
+              {estAffiche? <p className="project__desc">{p.description} </p>: ""}
+              
             </article>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

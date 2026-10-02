@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  align-items: start;
 }
 
 .project {
@@ -39,6 +40,8 @@
   display: flex;
   gap: 1.25rem;
   margin-top: auto;
+  align-items: center;
+  justify-content: center;
 }
 .project__links a {
   color: var(--accent);
