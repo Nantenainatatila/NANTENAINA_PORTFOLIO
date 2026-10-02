@@ -27,7 +27,7 @@ export default function Hero() {
             <a href="#projects" className="btn btn--primary">
               Voir mes projets
             </a>
-            <a href="cv.pdf" download="CV_Nante.pdf" className="btn btn--outline">
+            <a href="CV_Nantenaina.pdf" download="CV_Nante.pdf" className="btn btn--outline">
               Télécharger mon cv
             </a>
             <a href="#contact" className="btn btn--outline">
