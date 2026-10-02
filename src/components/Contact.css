@@ -40,6 +40,8 @@
 
 .contact_Icon_Text {
   display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .contact__icon {

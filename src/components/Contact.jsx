@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Contact.css";
-import TechTag from "./TechTag";
+import Reveal from "./Reveal";
 const FORMSPREE_ID = "mkjgedwj";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { FaWhatsapp, FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
@@ -52,24 +52,33 @@ export default function Contact() {
         <div className="contact__layout">
         <ul className="contact__info">
             {contacts.map(({ icon: Icon, text, href }) => (
-              <li key={text} className="contact_Icon_Text">
-                <span className="contact__icon" aria-hidden="true">
-                  <Icon />
-                </span>
-                <div className="contact__text">
-                  {href ? (
-                    <a href={href} target="_blank" rel="noreferrer">
-                      {text}
-                    </a>
-                  ) : (
-                    <p>{text}</p>
-                  )}
-                </div>
+              <Reveal>
+                <li key={text} >
+                <Reveal >
+                  <div className="contact_Icon_Text">
+                      <span className="contact__icon" aria-hidden="true">
+                        <Icon />
+                      </span>
+                      <div className="contact__text">
+                        {href ? (
+                          <a href={href} target="_blank" rel="noreferrer">
+                            {text}
+                          </a>
+                        ) : (
+                          <p>{text}</p>
+                        )}
+                  </div>
+                  
+                  </div>
+                </Reveal>
+                
               </li>
+              </Reveal>
+              
             ))}
           </ul>
 
-
+          <Reveal>
           <form className="contact__form" onSubmit={handleSubmit}>
             <label htmlFor="name">Nom</label>
             <input id="name" name="name" type="text" required autoComplete="name" />
@@ -99,6 +108,8 @@ export default function Contact() {
             </p>
             </center>
           </form>
+          </Reveal>
+          
         </div>
       </div>
     </section>
