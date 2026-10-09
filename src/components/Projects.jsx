@@ -1,10 +1,12 @@
 import "./Projects.css";
 import { projects } from "../data/projects";
 import { useState } from "react";
-import TechTag from "../components/TechTag";
+import TechTag from "./TechTag";
+import ProjectGallery from "./ProjectGallery";
 
 export default function Projects() {
   const [affiche, setAffiche] = useState([]);
+  const [galerie, setGalerie] = useState(null); // projet dont la galerie est ouverte
   const basculer = (title) => {
     setAffiche((liste) => 
       liste.includes(title)
@@ -28,12 +30,21 @@ export default function Projects() {
               <article key={p.title} className="project">
               <h3 className="project__title">{p.title}</h3>
               
-               <img
-                        className="project__photo"
-                        src={p.image}
-                        alt=""
-                        
+              <button
+                type="button"
+                className="project__photo-btn"
+                onClick={() => setGalerie(p)}
+                aria-label={`Voir les captures du projet ${p.title}`}
+              >
+                <img
+                  className="project__photo"
+                  src={p.image}
+                  alt=""
                 />
+                {p.images?.length > 0 && (
+                  <span className="project__photo-count">{p.images.length} captures</span>
+                )}
+              </button>
               <br />
               <ul className="project__tech">
                 {p.tech.map((t) => (
@@ -46,12 +57,12 @@ export default function Projects() {
               <div className="project__links">
                 {p.link && (
                   <a href={p.link} target="_blank" rel="noreferrer">
-                    Voir le site
+                    Code source
                   </a>
                 )}
-                {p.link && (
-                  <a href={p.link} target="_blank" rel="noreferrer">
-                    Code source
+                {p.demo && (
+                  <a href={p.demo} target="_blank" rel="noreferrer">
+                   Demonstration
                   </a>
                 )}
                 
@@ -66,6 +77,13 @@ export default function Projects() {
           })}
         </div>
       </div>
+      {galerie && (
+        <ProjectGallery
+          title={galerie.title}
+          images={galerie.images}
+          onClose={() => setGalerie(null)}
+        />
+      )}
     </section>
   );
 }

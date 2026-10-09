@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="hero__inner container">
         <img
           className="hero__photo"
-          src="profil.png"
+          src="profil.webp"
           alt=""
           width="320"
           height="320"
