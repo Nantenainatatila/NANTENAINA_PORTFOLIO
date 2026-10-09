@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Navbar.css";
+import { Sun, Moon} from "lucide-react";
 
 const links = [
   {href: "#top", label: "Accueil"},
@@ -44,7 +45,7 @@ export default function Navbar({ theme, onToggleTheme }) {
               theme === "dark" ? "Activer le thème clair" : "Activer le thème sombre"
             }
           >
-            {theme === "dark" ? "☀️" : "🌙"}
+            {theme === "dark" ? <Sun /> : <Moon />}
           </button>
 
           <button

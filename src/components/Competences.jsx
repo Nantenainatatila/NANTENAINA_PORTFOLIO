@@ -5,7 +5,7 @@ import TechTag from "./TechTag";
 const groups = [
   { title: "Front-end", items: ["HTML", "CSS", "JavaScript", "React"] },
   { title: "Back-end", items: ["Node.js", "Express", "API REST"] },
-  { title: "Outils", items: ["Git", "GitHub", "Vite", "Vercel","Docker"]},
+  { title: "Outils", items: ["Git", "GitHub", "Vite", "Neon db", "Vercel","Docker"]},
   {title: "Database", items: ["PostgreSQL","MySQL","MongoDB"]}
 ];
 

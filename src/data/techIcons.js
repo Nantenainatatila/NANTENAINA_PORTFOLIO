@@ -1,6 +1,6 @@
 import {
   FaReact, FaNodeJs, FaPython, FaDocker, FaGitAlt, FaGithub,
-  FaHtml5, FaCss3Alt, FaJs,
+  FaHtml5, FaCss3Alt, FaJs, FaDatabase
 } from "react-icons/fa";
 import {
   SiExpress, SiPostgresql, SiMongodb, SiMysql, SiFlask,
@@ -29,6 +29,7 @@ export const techIcons = {
   "git":                 { icon: FaGitAlt,      color: "#F05032" },
   "github":              { icon: FaGithub,      color: null },
   "vercel":              { icon: SiVercel,      color: null },
+  "neon db":                { icon: FaDatabase,      color: "#2496ED" },
   "vite":                { icon: SiVite,        color: "#8B5CF6" },
   "figma":               { icon: SiFigma,       color: "#F24E1E" },
   "visual studio code":  { icon: VscCode,       color: "#2F8FDE" },
