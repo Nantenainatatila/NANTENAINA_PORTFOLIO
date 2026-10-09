@@ -32,6 +32,9 @@ export default function Hero() {
               Me contacter
             </a>
           </div>
+          <br />
+          <br />
+          
         </div>
       </div>
     </section>
