@@ -1,6 +1,15 @@
 // src/data/projects.js
 export const projects = [
   {
+    title: "Car MADA",
+    description: "C'est une plateforme e-commerce pour les ventes et les achays des voitures gérér par un administrateur",
+    tech: ["HTML","CSS","React", "Node.js", "PostgreSQL", "Neon db", "Vercel"],
+    link: "https://github.com/Nantenainatatila/Car_Mada_Frontend",
+    image: "image1project3.webp",
+    demo: "https://carfrontend-two.vercel.app",
+    images: [1,2,3,4,5,6].map((n) => `image${n}project3.webp`)
+  },
+  {
     title: "Gestion des notes",
     description: "Ce projet sert à gérer tous les notes dans l'Université Saint Vincent de Paul AKAMASOA avec calcules des moyennes automatiques, les observations ainsi que la génération automatique des listes pour chaque resultats et un relevé des notes pour chaque étudiant en pdf",
     tech: ["HTML","CSS","React", "Node.js", "PostgreSQL", "Neon db", "Vercel"],
