@@ -3,7 +3,7 @@
   --mx: 50%;
   --my: 30%;
   position: relative;
-  overflow: hidden;
+  overflow: clip; /* clip (pas hidden) : garde le sticky du bandeau fonctionnel */
   padding: 2.5rem 0 0;
 }
 
@@ -163,7 +163,7 @@
 .hero__track span {
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: var(--muted);
+  color: var(--text);
 }
 .hero__track span::after { content: "✦"; margin-left: 2.5rem; color: var(--accent); }
 @keyframes hero-scroll {
@@ -193,6 +193,16 @@
 
 @media (min-width: 480px) {
   .hero__buttons { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+}
+
+/* ---------- Téléphone : le bandeau reste collé en bas de l'écran ---------- */
+@media (max-width: 767px) {
+  .hero__marquee {
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    margin-top: 2rem;
+  }
 }
 
 /* ---------- Tablette et ordinateur ---------- */
