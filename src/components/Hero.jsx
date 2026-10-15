@@ -46,10 +46,7 @@ export default function Hero() {
             <span className="hero__title-accent">NAINA</span>
           </h1>
           <p className="hero__role">Développeur Full-Stack junior</p>
-          <p className="hero__desc">
-            Je crée des sites et des applications web rapides, accessibles et
-            faciles à utiliser.
-          </p>
+          
 
           <div className="hero__buttons">
             <a href="#projects" className="btn btn--primary">
