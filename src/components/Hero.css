@@ -99,8 +99,8 @@
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 .btn--primary { background: var(--button); color: #fff; }
-.btn--outline { background: var(--button); color: #fff; border-color: var(--button); }
-.btn--ghost { background: var(--card); color: var(--text); border-color: var(--text); }
+.btn--outline { background: var(--button); color: #fff;  }
+.btn--ghost { background: var(--card); color: var(--text); }
 .btn:hover { transform: translateY(-2px); }
 .btn:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
 
