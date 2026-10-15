@@ -8,14 +8,14 @@
 .contact__info {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  margin: 0;
+  gap: 0.1rem;
+  padding: 0;
   align-content: start;
 }
 .contact__info li {
   list-style: none;
   align-items: center;
-  gap: 1.15rem;
+  gap: 1rem;
   padding-bottom: 1rem;
 }
 .contact__info span { font-size: 0.85rem; color: var(--muted); }
