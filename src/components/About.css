@@ -4,9 +4,14 @@
   grid-template-columns: 1fr;
   gap: 2rem;
 }
-
+.about__text {
+   padding: 1rem 1.25rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
 .about__text p {
-  margin: 0 0 1rem;
+  margin: 1rem;
   line-height: 1.7;
   max-width: 40rem;
 }

@@ -6,6 +6,7 @@ const facts = [
   { label: "Localisation", value: "Antananarivo, Madagascar" },
   { label: "Langues", value: "Français, Malgache, Anglais" },
   { label: "Disponibilité", value: "Stage, alternance ou freelance" },
+  
 ];
 
 export default function About() {
