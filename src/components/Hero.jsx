@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./Hero.css";
 
 // Modifiez cette liste avec votre vraie stack
-const STACK = ["React", "JavaScript", "Node.js", "Express", "MongoDB", "MySQL", "HTML/CSS", "Git"];
+const STACK = ["React", "JavaScript", "Node.js", "Express", "MongoDB","PostgreSQL", "MySQL", "HTML/CSS", "Git"];
 
 function useLocalTime() {
   const get = () =>
