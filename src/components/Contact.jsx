@@ -67,7 +67,7 @@ export default function Contact() {
                         ) : (
                           <p>{text}</p>
                         )}
-                  </div>
+                      </div>
                   
                   </div>
                 </Reveal>
